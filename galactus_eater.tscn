@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://lq8x7pcxpwt5"]
+
+[ext_resource type="Texture2D" uid="uid://i83ekr4k2fr3" path="res://34aeeb666a5adae.png" id="1_6xxye"]
+[ext_resource type="Script" uid="uid://bsts4wy6unnd5" path="res://galactus_eater.gd" id="1_d450i"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lfhd2"]
+radius = 20.0
+
+[node name="GalactusEater" type="CharacterBody2D" unique_id=1158069946]
+script = ExtResource("1_d450i")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1070313171]
+position = Vector2(360, 640)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("1_6xxye")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1486403567]
+shape = SubResource("CircleShape2D_lfhd2")
